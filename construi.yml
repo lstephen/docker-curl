@@ -14,6 +14,7 @@ volumes:
 targets:
   version:
     build: .
+    entrypoint: []
     run: /bin/bash -c "curl -V | head -n 1 | cut -d ' ' -f2 > VERSION"
 
   build: build
